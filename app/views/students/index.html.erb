@@ -28,7 +28,7 @@ body {
     </td>
     <td>
     <div class="input-icons">
-    <a href="<%= student_path(student) %>" style="color: black;"><i class="fa fa-trash-o icon"></i></a>
+    <td><%= link_to "Destroy", student_path(student), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
     </td>             
   </tr>
 <% end %>
